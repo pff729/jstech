@@ -1,0 +1,130 @@
+.game-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.game-controls {
+  padding-top: 50px;
+  width: 300px;
+  margin: 0 auto;
+}
+.game-controls label {
+  display: inline-block;
+  width: 100px;
+}
+
+.pop-box {
+  box-sizing: border-box;
+  background: #c0c0c0;
+  border-left: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  border-right: 1px solid #6e6e6e;
+  border-bottom: 1px solid #6e6e6e;
+}
+.pop-box--inset {
+  border-left: 1px solid #6e6e6e;
+  border-top: 1px solid #6e6e6e;
+  border-right: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.minesweeper {
+  display: inline-block;
+  padding: 15px;
+}
+.minesweeper__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.minesweeper__win-label {
+  font-size: 15px;
+}
+
+.minefield {
+  display: inline-block;
+  overflow: auto;
+}
+
+.minefield-row {
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.mine-cell {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: default;
+}
+.mine-cell--hidden:hover:active:not(.mine-cell--flagged), .mine-cell--revealed {
+  background: #AAA;
+  border: 1px solid #6e6e6e;
+}
+.mine-cell--revealed.mine-cell--mine {
+  background: #F00;
+}
+.mine-cell--revealed.mine-cell--mine {
+  background-image: url("http://old.no/icon/entertainment/mini-mine.gif");
+  background-repeat: no-repeat;
+  background-color: #F00;
+  background-size: 70% 70%;
+  background-position: center;
+}
+.mine-cell--flagged {
+  background-image: url("http://dougx.net/sweeper/flag.png");
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-position: center;
+}
+
+.mine-cell-number--1 {
+  color: blue;
+}
+.mine-cell-number--2 {
+  color: #007b00;
+}
+.mine-cell-number--3 {
+  color: red;
+}
+.mine-cell-number--4 {
+  color: #00007b;
+}
+.mine-cell-number--5 {
+  color: #7b0000;
+}
+.mine-cell-number--6 {
+  color: teal;
+}
+.mine-cell-number--7 {
+  color: black;
+}
+.mine-cell-number--8 {
+  color: #bdbdbd;
+}
+
+.digital-counter {
+  display: inline-block;
+  background: #000;
+  color: #F00;
+  font-size: 40px;
+  font-family: Courier;
+}
